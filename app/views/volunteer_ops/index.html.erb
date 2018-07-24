@@ -1,6 +1,6 @@
 <div>
-  <h1>Harrow Volunteering Opportunities</h1>
-</div> 
+  <h1>Volunteer in Harrow?<small>&nbsp;Search below</small></h1>
+</div>
 <%= render 'search_form' %>
 <br>
 <div id='orgs_scroll' style="height:410px;width:100%;border:1px solid #ccc;overflow:scroll;">
@@ -9,7 +9,7 @@
       <% @volunteer_ops.each do |op| %>
           <tr>
             <td class='center-map-on-op'
-                data-lat="<%= op.latitude %>" 
+                data-lat="<%= op.latitude %>"
                 data-lng="<%= op.longitude %>"  >
               <strong>
                 <%= link_to_vol_op(op, :title) %>
